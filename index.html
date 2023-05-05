@@ -1,62 +1,69 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>
-         Job Application Tracker
-      </title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <h1>
-         <center>Job Application Tracker</center>
-      </h1>
-      <hr>
-      <div class="application-form">
-         <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
-            <div>
-               <label>Company Name*</label><label class="validation-error hide" id="companyNameValidationError">This field is required.</label>
-               <input type="text" name="companyName" id="companyName">
-            </div>
-            <div>
-               <label>Position Title*</label><label class="validation-error hide" id="positionTitleValidationError">This field is required.</label>
-               <input type="text" name="positionTitle" id="positionTitle">
-            </div>
-            <div>
-               <label>Application Status</label>
-               <select name="applicationStatus" id="applicationStatus">
-                  <option value="">Select a status</option>
-                  <option value="Applied">Applied</option>
-                  <option value="Interviewed">Interviewed</option>
-                  <option value="Offered">Offered</option>
-                  <option value="Rejected">Rejected</option>
-                  <option value="Withdrawn">Withdrawn</option>
-               </select>
-            </div>
-            <div>
-               <label>Application Date</label>
-               <input type="date" name="applicationDate" id="applicationDate">
-            </div>
-            <div  class="form-action-buttons">
-               <input type="submit" value="Submit">
-            </div>
-         </form>
-      </div>
-      <br/>
-      <div class = "applications-table">
-         <table class="list" id="applicationList">
-            <thead>
-               <tr>
-                  <th>Company Name</th>
-                  <th>Position Title</th>
-                  <th>Application Status</th>
-                  <th>Application Date</th>
-                  <th>Actions</th>
-               </tr>
-            </thead>
-            <tbody>
-            </tbody>
-         </table>
-      </div>
-      <script src="script.js"></script>
-   </body>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link rel="icon" href="../../../../favicon.ico">
+   <title>Offcanvas template for Bootstrap</title>
+   <!-- Bootstrap core CSS -->
+   <link href="../../css/editor.css" rel="stylesheet">
+   <!-- Custom styles for this template -->
+   <link href="offcanvas.css" rel="stylesheet">
+   <script src="chrome-extension://ajdpfmkffanmkhejnopjppegokpogffp/assets/prompt.js"></script><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
+</head>
+<body class="bg-light" data-new-gr-c-s-check-loaded="14.1029.0" data-gr-ext-installed="">
+   <h1>
+      <center>Job Application Tracker</center>
+   </h1>
+   <hr>
+   <div class="application-form">
+      <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+         <div>
+            <label>Company Name*</label><label class="validation-error hide" id="companyNameValidationError">This field is required.</label>
+            <input type="text" name="companyName" id="companyName">
+         </div>
+         <div>
+            <label>Position Title*</label><label class="validation-error hide" id="positionTitleValidationError">This field is required.</label>
+            <input type="text" name="positionTitle" id="positionTitle">
+         </div>
+         <div>
+            <label>Application Status</label>
+            <select name="applicationStatus" id="applicationStatus">
+               <option value="">Select a status</option>
+               <option value="Applied">Applied</option>
+               <option value="Interviewed">Interviewed</option>
+               <option value="Offered">Offered</option>
+               <option value="Rejected">Rejected</option>
+               <option value="Withdrawn">Withdrawn</option>
+            </select>
+         </div>
+         <div>
+            <label>Application Date</label>
+            <input type="date" name="applicationDate" id="applicationDate">
+         </div>
+         <div class="form-action-buttons">
+            <input type="submit" value="Submit">
+         </div>
+      </form>
+   </div>
+   <br>
+   <div class="applications-table">
+      <table class="list" id="applicationList">
+         <thead>
+            <tr>
+               <th>Company Name</th>
+               <th>Position Title</th>
+               <th>Application Status</th>
+               <th>Application Date</th>
+               <th>Actions</th>
+            </tr>
+         </thead>
+         <tbody>
+         </tbody>
+      </table>
+   </div>
+   <script src="script.js"></script>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>
