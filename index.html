@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>
-        JavaScript CRUD Form 
-    </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-	<h1><center>JavaScript CRUD Form </center></h1>
-	<hr>
-			<div class="employee-form">
-                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
-                    <div>
-                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
-                        <input type="text" name="fullName" id="fullName">
-                    </div>
-                    <div>
-                        <label>Email Id</label>
-                        <input type="text" name="email" id="email">
-                    </div>
-                    <div>
-                        <label>Salary</label>
-                        <input type="text" name="salary" id="salary">
-                    </div>
-                    <div>
-                        <label>City and State</label>
-                        <input type="text" name="city" id="city">
-                    </div>
-                    <div  class="form-action-buttons">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-		</div>
-		<br/>
-		<div class = "employees-table">
-                <table class="list" id="employeeList">
-                    <thead>
-                        <tr>
-                            <th>Full Name</th>
-                            <th>Email Id</th>
-                            <th>Salary</th>
-                            <th>City and State</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
-        </div>
-    <script src="script.js"></script>
-</body>
+   <head>
+      <title>
+         Job Application Tracker
+      </title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <h1>
+         <center>Job Application Tracker</center>
+      </h1>
+      <hr>
+      <div class="application-form">
+         <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+               <label>Company Name*</label><label class="validation-error hide" id="companyNameValidationError">This field is required.</label>
+               <input type="text" name="companyName" id="companyName">
+            </div>
+            <div>
+               <label>Position Title*</label><label class="validation-error hide" id="positionTitleValidationError">This field is required.</label>
+               <input type="text" name="positionTitle" id="positionTitle">
+            </div>
+            <div>
+               <label>Application Status</label>
+               <select name="applicationStatus" id="applicationStatus">
+                  <option value="">Select a status</option>
+                  <option value="Applied">Applied</option>
+                  <option value="Interviewed">Interviewed</option>
+                  <option value="Offered">Offered</option>
+                  <option value="Rejected">Rejected</option>
+                  <option value="Withdrawn">Withdrawn</option>
+               </select>
+            </div>
+            <div>
+               <label>Application Date</label>
+               <input type="date" name="applicationDate" id="applicationDate">
+            </div>
+            <div  class="form-action-buttons">
+               <input type="submit" value="Submit">
+            </div>
+         </form>
+      </div>
+      <br/>
+      <div class = "applications-table">
+         <table class="list" id="applicationList">
+            <thead>
+               <tr>
+                  <th>Company Name</th>
+                  <th>Position Title</th>
+                  <th>Application Status</th>
+                  <th>Application Date</th>
+                  <th>Actions</th>
+               </tr>
+            </thead>
+            <tbody>
+            </tbody>
+         </table>
+      </div>
+      <script src="script.js"></script>
+   </body>
 </html>
