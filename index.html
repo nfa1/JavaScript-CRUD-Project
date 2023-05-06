@@ -1,79 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Dashboard</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Task Dashboard</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Task Dashboard</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#">Task Dashboard</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Create Task</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Logout</a>
-                </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Dashboard</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Create Task</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Logout</a>
+               </li>
             </ul>
-        </div>
-    </nav>
-
-    <main class="container mt-4">
-        <h1>Tasks Dashboard</h1>
-        <section>
-            <h2>Tasks Overview</h2>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <div class="card-header bg-primary text-white">
-                            <h3>Task 1</h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Description of task 1</p>
-                            <ul class="list-group">
-                                <li class="list-group-item"><strong>Due:</strong> 2023-06-30</li>
-                                <li class="list-group-item"><strong>Assignee:</strong> John Smith</li>
-                            </ul>
-                            <div class="mt-2">
-                                <span class="badge badge-danger">Incomplete</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <div class="card-header bg-primary text-white">
-                            <h3>Task 2</h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Description of task 2</p>
-                            <ul class="list-group">
-                                <li class="list-group-item"><strong>Due:</strong> 2023-07-15</li>
-                                <li class="list-group-item"><strong>Assignee:</strong> Jane Doe</li>
-                            </ul>
-                            <div class="mt-2">
-                                <span class="badge badge-warning">In Progress</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <div class="card-header bg-primary text-white">
-                            <h3>Task 3</h3>
-                        </div>
-                        <div
+         </div>
+      </nav>
+      <main class="container mt-4">
+      <h1>Tasks Dashboard</h1>
+      <section>
+      <h2>Tasks Overview</h2>
+      <div class="row">
+      <div class="col-lg-4 mb-4">
+         <div class="card">
+            <div class="card-header bg-primary text-white">
+               <h3>Task 1</h3>
+            </div>
+            <div class="card-body">
+               <p class="card-text">Description of task 1</p>
+               <ul class="list-group">
+                  <li class="list-group-item"><strong>Due:</strong> 2023-06-30</li>
+                  <li class="list-group-item"><strong>Assignee:</strong> John Smith</li>
+               </ul>
+               <div class="mt-2">
+                  <span class="badge badge-danger">Incomplete</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+         <div class="card">
+            <div class="card-header bg-primary text-white">
+               <h3>Task 2</h3>
+            </div>
+            <div class="card-body">
+               <p class="card-text">Description of task 2</p>
+               <ul class="list-group">
+                  <li class="list-group-item"><strong>Due:</strong> 2023-07-15</li>
+                  <li class="list-group-item"><strong>Assignee:</strong> Jane Doe</li>
+               </ul>
+               <div class="mt-2">
+                  <span class="badge badge-warning">In Progress</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+      <div class="card">
+      <div class="card-header bg-primary text-white">
+         <h3>Task 3</h3>
+      </div>
+      <div class="pomodoro-timer">
+         <h2>Pomodoro Timer</h2>
+         <div class="timer-display">25:00</div>
+         <div class="timer-buttons">
+            <button class="btn btn-primary start-timer">Start</button>
+            <button class="btn btn-danger reset-timer">Reset</button>
+         </div>
+      </div>
